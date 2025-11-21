@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <p>Mi primer párrafo en HTML5</p>
-    <p>Sitio web informativo</p>
-    <a href="http://www.jango.com" target="_blank">Escucha radio Online!</a>
-    <br>
-    <img src="https://cdn.pixabay.com/photo/2024/10/17/15/44/woman-9127992_1280.jpg" alt="Mujer con una pañoleta beige en la cabeza" width="200">
+  <hi>Formularios</hi>
+
+  <div id="contact-form" class="form-container">  
+    <h2>Contact Form</h2>
+    <form action="">
+      <div>
+        <div>
+          <label for="fname">First Name *</label>
+          <input type="text" id="fname" name="fname" id="fname">
+        </div>
+        <div>
+          <lable for="lname">Last Name *</label>
+          <input type="text" id="lname" name="lname" id="lname">
+        </div>
+      <div>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" id="email">
+      </div>
+      <div>
+        <p>Query Type</p>
+      </div>
+      <div>
+        <div>
+          <input type="radio" id="general" name="query-type" value="General Inquiry">         
+          <label for="general">General Inquiry</label><br>
+        </div>
+        <div>
+          <input type="radio" id="support" name="query-type" value="Support Request">
+          <label for="support">Support Request</label><br>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message *</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      </div>
+      <div>
+        <input type="checkbox" id="consent" name="consent" value="true">
+        <label for="consent">I consent to being contacted by the team</label><br>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 </html>
-<main>
-    <h1>Mundial de fútbol 2026</h1>
-    <h2>Todo lo que debes saber antes de la competición</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolorum totam, repellat dolores possimus dolorem quod eos inventore laborum eius adipisci nobis ipsa officiis minus veritatis magni neque nesciunt tempore.</p>
-    <p>Descubre las marcas asociadas</p>
-    <ul>
-      <li>
-        <a href="...">Nike</a>
-      </li>
-      <li>
-        <a href="...">Adidas</a>
-      </li>
-      <li>
-        <a href="...">Powerade</a>
-      </li>
-    </ul>
-  </main>
-  <footer>
-    <img src="..." alt="">
-    <p>Todos los derechos reservados</p>
-    <ul>
-      <li>
-        <a href="...">Instagram</a>
-      </li>
-      <li>
-        <a href="...">LinkedIn</a>
-      </li>
-      <li>
-        <a href="...">Dribble</a>
-      </li>
-    </ul>
-  </footer>
