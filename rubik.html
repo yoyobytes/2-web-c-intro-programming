@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Cómo Armar un Cubo Rubik - Método para Principiantes</title>
+</head>
+<body>
+    <h1>Tutorial: Cómo Armar un Cubo Rubik</h1>
+    <h2>Método para Principiantes</h2>
+    
+    <hr>
+    
+    <h3>Introducción</h3>
+    <p>Bienvenido a este tutorial básico para resolver el cubo Rubik 3x3. Este método está diseñado para principiantes y te enseñará paso a paso cómo resolver el cubo de manera sencilla.</p>
+    
+    <img src="https://commons.wikimedia.org/wiki/File:Rubik%27s_cube_scrambled.svg" alt="Cubo Rubik sin resolver" width="300">
+    
+    <h3>Notación Básica de Movimientos</h3>
+    <p>Antes de empezar, es importante conocer la notación que usaremos:</p>
+    <ul>
+        <li><strong>F</strong> (Front/Frente): Gira la cara frontal en sentido horario</li>
+        <li><strong>F'</strong>: Gira la cara frontal en sentido antihorario</li>
+        <li><strong>R</strong> (Right/Derecha): Gira la cara derecha en sentido horario</li>
+        <li><strong>R'</strong>: Gira la cara derecha en sentido antihorario</li>
+        <li><strong>L</strong> (Left/Izquierda): Gira la cara izquierda en sentido horario</li>
+        <li><strong>L'</strong>: Gira la cara izquierda en sentido antihorario</li>
+        <li><strong>U</strong> (Up/Arriba): Gira la cara superior en sentido horario</li>
+        <li><strong>U'</strong>: Gira la cara superior en sentido antihorario</li>
+        <li><strong>D</strong> (Down/Abajo): Gira la cara inferior en sentido horario</li>
+        <li><strong>D'</strong>: Gira la cara inferior en sentido antihorario</li>
+        <li><strong>B</strong> (Back/Atrás): Gira la cara trasera en sentido horario</li>
+        <li><strong>B'</strong>: Gira la cara trasera en sentido antihorario</li>
+    </ul>
+    
+    <img src="" alt="Diagrama de notación de movimientos" width="300">
+    
+    <hr>
+    
+    <h2>Paso 1: La Cruz Blanca</h2>
+    <p>El primer paso es formar una cruz blanca en la cara superior. Asegúrate de que los colores laterales de las aristas coincidan con los centros de sus respectivas caras.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Formar una cruz con las 4 aristas blancas alrededor del centro blanco, alineadas con los colores de las caras laterales.</p>
+    
+    <img src="" alt="Cruz blanca completada" width="300">
+    
+    <h4>Consejos:</h4>
+    <ul>
+        <li>Encuentra las piezas de arista que tienen blanco</li>
+        <li>Colócalas una por una alrededor del centro blanco</li>
+        <li>Asegúrate de que el otro color de la arista coincida con el centro de su cara</li>
+    </ul>
+    
+    <p><strong>Nota:</strong> Este paso es intuitivo y no requiere algoritmos específicos. Practica moviendo las piezas hasta formar la cruz correctamente.</p>
+    
+    <hr>
+    
+    <h2>Paso 2: Primera Capa - Esquinas Blancas</h2>
+    <p>Ahora completaremos la primera capa insertando las esquinas blancas en sus posiciones correctas.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Colocar las 4 esquinas blancas para completar toda la cara blanca y la primera capa del cubo.</p>
+    
+    <img src="" alt="Primera capa completa" width="300">
+    
+    <h4>Algoritmo para insertar esquinas desde abajo:</h4>
+    <p>Si la esquina blanca está en la capa inferior:</p>
+    <ol>
+        <li>Posiciona la esquina debajo de donde debe ir</li>
+        <li>Usa uno de estos algoritmos según la orientación del blanco:</li>
+    </ol>
+    
+    <p><strong>Si el blanco está en la cara derecha:</strong></p>
+    <p>R U R'</p>
+    
+    <p><strong>Si el blanco está en la cara frontal:</strong></p>
+    <p>F' U' F</p>
+    
+    <p><strong>Si el blanco está en la cara inferior:</strong></p>
+    <p>R U U R' U' R U R'</p>
+    
+    <img src="" alt="Ejemplo de inserción de esquina" width="300">
+    
+    <hr>
+    
+    <h2>Paso 3: Segunda Capa - Aristas Medias</h2>
+    <p>Con la cara blanca completa (ahora voltea el cubo para que el blanco quede abajo), resolveremos las aristas de la segunda capa.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Colocar las 4 aristas de la segunda capa en sus posiciones correctas.</p>
+    
+    <img src="" alt="Segunda capa completa" width="300">
+    
+    <h4>Algoritmo - Arista va a la DERECHA:</h4>
+    <p>U R U' R' U' F' U F</p>
+    
+    <h4>Algoritmo - Arista va a la IZQUIERDA:</h4>
+    <p>U' L' U L U F U' F'</p>
+    
+    <h4>Pasos:</h4>
+    <ol>
+        <li>Encuentra una arista en la capa superior que NO tenga amarillo</li>
+        <li>Gira la cara superior (U) hasta que el color frontal coincida con el centro frontal</li>
+        <li>Observa el color de arriba de esa arista para saber si va a la derecha o izquierda</li>
+        <li>Aplica el algoritmo correspondiente</li>
+        <li>Repite hasta completar las 4 aristas</li>
+    </ol>
+    
+    <img src="" alt="Inserción de arista en segunda capa" width="300">
+    
+    <hr>
+    
+    <h2>Paso 4: Cruz Amarilla</h2>
+    <p>Ahora trabajaremos en la cara superior (amarilla). El objetivo es formar una cruz amarilla, sin importar si los colores laterales están alineados.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Formar una cruz amarilla en la cara superior.</p>
+    
+    <img src="" alt="Cruz amarilla" width="300">
+    
+    <h4>Algoritmo de la Cruz Amarilla:</h4>
+    <p>F R U R' U' F'</p>
+    
+    <h4>Casos posibles:</h4>
+    <ul>
+        <li><strong>Punto amarillo:</strong> Aplica el algoritmo, obtendrás una "L". Aplica nuevamente y obtendrás una "línea"</li>
+        <li><strong>L amarilla:</strong> Coloca la "L" en posición de las 9 y las 12 del reloj, aplica el algoritmo</li>
+        <li><strong>Línea amarilla:</strong> Coloca la línea horizontal, aplica el algoritmo</li>
+        <li><strong>Cruz amarilla:</strong> ¡Listo! Continúa al siguiente paso</li>
+    </ul>
+    
+    <img src="" alt="Diferentes patrones antes de la cruz amarilla" width="300">
+    
+    <hr>
+    
+    <h2>Paso 5: Orientar Aristas Amarillas</h2>
+    <p>Ya tenemos la cruz amarilla formada. Ahora alinearemos los colores laterales de las aristas con los centros de sus respectivas caras.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Que las aristas amarillas coincidan con los colores de los centros de las caras laterales.</p>
+    
+    <img src="" alt="Aristas amarillas orientadas" width="300">
+    
+    <h4>Algoritmo:</h4>
+    <p>R U R' U R U U R'</p>
+    
+    <h4>Pasos:</h4>
+    <ol>
+        <li>Busca si hay una cara donde 2 aristas ya coincidan con el centro</li>
+        <li>Si encuentras una, colócala ATRÁS (cara trasera)</li>
+        <li>Aplica el algoritmo</li>
+        <li>Si no hay ninguna cara con 2 aristas correctas, aplica el algoritmo una vez y vuelve a buscar</li>
+        <li>Repite hasta que todas las aristas estén alineadas</li>
+    </ol>
+    
+    <img src="" alt="Proceso de orientación de aristas" width="300">
+    
+    <hr>
+    
+    <h2>Paso 6: Posicionar Esquinas Amarillas</h2>
+    <p>Ahora colocaremos las esquinas amarillas en sus posiciones correctas (aunque aún no estén orientadas).</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Que cada esquina esté en su posición correcta, aunque el amarillo no esté arriba todavía.</p>
+    
+    <img src="" alt="Esquinas en posición correcta" width="300">
+    
+    <h4>Algoritmo:</h4>
+    <p>U R U' L' U R' U' L</p>
+    
+    <h4>Pasos:</h4>
+    <ol>
+        <li>Busca una esquina que ya esté en su posición correcta (los 3 colores coinciden con las caras correspondientes)</li>
+        <li>Si encuentras una, colócala en la esquina FRONTAL DERECHA</li>
+        <li>Aplica el algoritmo</li>
+        <li>Si no hay ninguna en posición correcta, aplica el algoritmo una vez desde cualquier posición</li>
+        <li>Repite hasta que todas estén en su posición (puede que no estén orientadas correctamente todavía)</li>
+    </ol>
+    
+    <img src="" alt="Permutación de esquinas" width="300">
+    
+    <hr>
+    
+    <h2>Paso 7: Orientar Esquinas Amarillas (ÚLTIMO PASO)</h2>
+    <p>¡El paso final! Orientaremos las esquinas amarillas para que el amarillo quede arriba en todas ellas.</p>
+    
+    <h4>Objetivo:</h4>
+    <p>Girar las esquinas para que el amarillo de todas ellas quede en la cara superior. ¡CUBO RESUELTO!</p>
+    
+    <img src="" alt="Cubo Rubik completamente resuelto" width="300">
+    
+    <h4>Algoritmo:</h4>
+    <p>R' D' R D</p>
+    
+    <h4>Pasos:</h4>
+    <ol>
+        <li>Mantén el cubo con una esquina sin resolver en la posición FRONTAL DERECHA SUPERIOR</li>
+        <li>Aplica el algoritmo (R' D' R D) entre 2 y 4 veces hasta que esa esquina tenga el amarillo arriba</li>
+        <li><strong>IMPORTANTE:</strong> El cubo se verá desordenado temporalmente, ¡no te preocupes!</li>
+        <li>SIN girar el cubo, usa solo movimientos U para llevar la siguiente esquina sin resolver a la posición frontal derecha superior</li>
+        <li>Repite el algoritmo en esa esquina</li>
+        <li>Continúa hasta que todas las esquinas estén orientadas</li>
+        <li>Al terminar la última esquina, el cubo se resolverá completamente</li>
+    </ol>
+    
+    <img src="" alt="Proceso de orientación final" width="300">
+    
+    <hr>
+    
+    <h2>¡Felicidades!</h2>
+    <p>Si seguiste todos los pasos, ¡ahora has resuelto el cubo Rubik! Con práctica, podrás hacerlo cada vez más rápido.</p>
+    
+    <img src="" alt="Cubo Rubik resuelto - celebración" width="300">
+    
+    <h3>Consejos para seguir mejorando:</h3>
+    <ul>
+        <li>Practica cada paso por separado hasta dominarlo</li>
+        <li>Memoriza los algoritmos con la práctica repetida</li>
+        <li>Intenta resolver el cubo varias veces al día</li>
+        <li>Una vez que domines este método, podrás aprender métodos más avanzados como CFOP</li>
+        <li>No te frustres, ¡todos empezamos desde cero!</li>
+    </ul>
+    
+    <hr>
+    
+    <h2>Encuesta de Satisfacción</h2>
+    <p>Ayúdanos a mejorar este tutorial respondiendo las siguientes preguntas:</p>
+    
+    <form>
+        <h3>1. ¿Qué tan satisfecho estás con este tutorial?</h3>
+        <input type="radio" id="muy-satisfecho" name="satisfaccion" value="muy-satisfecho">
+        <label for="muy-satisfecho">Muy satisfecho</label><br>
+        
+        <input type="radio" id="satisfecho" name="satisfaccion" value="satisfecho">
+        <label for="satisfecho">Satisfecho</label><br>
+        
+        <input type="radio" id="neutral" name="satisfaccion" value="neutral">
+        <label for="neutral">Neutral</label><br>
+        
+        <input type="radio" id="insatisfecho" name="satisfaccion" value="insatisfecho">
+        <label for="insatisfecho">Insatisfecho</label><br>
+        
+        <input type="radio" id="muy-insatisfecho" name="satisfaccion" value="muy-insatisfecho">
+        <label for="muy-insatisfecho">Muy insatisfecho</label><br>
+        
+        <br>
+        
+        <h3>2. ¿Entendiste la guía?</h3>
+        <input type="radio" id="entendi-si" name="entendimiento" value="si">
+        <label for="entendi-si">Sí, entendí perfectamente</label><br>
+        
+        <input type="radio" id="entendi-mayoria" name="entendimiento" value="mayoria">
+        <label for="entendi-mayoria">Entendí la mayoría</label><br>
+        
+        <input type="radio" id="entendi-algo" name="entendimiento" value="algo">
+        <label for="entendi-algo">Entendí algunas partes</label><br>
+        
+        <input type="radio" id="entendi-no" name="entendimiento" value="no">
+        <label for="entendi-no">No entendí</label><br>
+        
+        <br>
+        
+        <h3>3. ¿Lograste resolver el cubo siguiendo este tutorial?</h3>
+        <input type="radio" id="resolver-si" name="resolucion" value="si">
+        <label for="resolver-si">Sí, lo resolví completamente</label><br>
+        
+        <input type="radio" id="resolver-parcial" name="resolucion" value="parcial">
+        <label for="resolver-parcial">Llegué hasta cierto paso</label><br>
+        
+        <input type="radio" id="resolver-no" name="resolucion" value="no">
+        <label for="resolver-no">No lo intenté aún</label><br>
+        
+        <input type="radio" id="resolver-aun-no" name="resolucion" value="aun-no">
+        <label for="resolver-aun-no">No pude resolverlo</label><br>
+        
+        <br>
+        
+        <h3>4. ¿Qué paso te pareció más difícil?</h3>
+        <input type="text" id="paso-dificil" name="paso-dificil" size="50"><br>
+        
+        <br>
+        
+        <h3>5. Comentarios, sugerencias o quejas:</h3>
+        <textarea id="comentarios" name="comentarios" rows="6" cols="50" placeholder="Escribe aquí tus comentarios..."></textarea><br>
+        
+        <br>
+        
+        <h3>Información opcional:</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" size="30"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="30"><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="5" max="120"><br>
+        
+        <br>
+        
+        <input type="submit" value="Enviar Encuesta">
+        <input type="reset" value="Limpiar Formulario">
+    </form>
+    
+    <hr>
+    
+    <footer>
+        <p><small>Tutorial de Cubo Rubik para Principiantes - 2025</small></p>
+        <p><small>Recuerda: La práctica hace al maestro. ¡Sigue intentándolo!</small></p>
+    </footer>
+    
+</body>
+</html>
