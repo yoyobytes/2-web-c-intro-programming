@@ -33,6 +33,10 @@ El tutorial incluye un formulario que recopila:
 - Comentarios y sugerencias
 - Información opcional del usuario (nombre, email, edad)
 
+## 💼 Acerca de SIGO
+
+Este proyecto forma parte de **SIGO** (Sistema de Instrucción para la Gestión Operativa), una iniciativa educativa para enseñar habilidades complejas de manera estructurada. Para conocer más sobre la viabilidad y visión del proyecto, consulta el [Elevator Pitch de SIGO](ELEVATOR_PITCH_SIGO.md).
+
 ## 📚 Recursos Adicionales
 
 Para aprender más sobre el cubo Rubik:
