@@ -35,7 +35,9 @@ El tutorial incluye un formulario que recopila:
 
 ## 💼 Acerca de SIGO
 
-Este proyecto forma parte de **SIGO** (Sistema de Instrucción para la Gestión Operativa), una iniciativa educativa para enseñar habilidades complejas de manera estructurada. Para conocer más sobre la viabilidad y visión del proyecto, consulta el [Elevator Pitch de SIGO](ELEVATOR_PITCH_SIGO.md).
+Este proyecto forma parte de **SIGO** (Sistema de Instrucción para la Gestión Operativa), una iniciativa educativa para enseñar habilidades complejas de manera estructurada. Para conocer más sobre la viabilidad y visión del proyecto, consulta el Elevator Pitch de SIGO:
+- 📄 [Versión en Español](ELEVATOR_PITCH_SIGO.md)
+- 📄 [English Version](ELEVATOR_PITCH_SIGO_EN.md)
 
 ## 📚 Recursos Adicionales
 
